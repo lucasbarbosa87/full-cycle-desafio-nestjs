@@ -6,6 +6,6 @@ export class ReserveSpotRequest {
   @IsNotEmpty()
   spots: string[]; //['A1', 'A2']
   @IsEnum(TicketKind)
-  ticketKind: TicketKind;
+  ticket_kind: TicketKind;
   email: string;
 }

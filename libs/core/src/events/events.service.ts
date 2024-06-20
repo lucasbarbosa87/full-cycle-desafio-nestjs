@@ -91,7 +91,7 @@ export class EventsService {
           await prisma.reservationHistory.createMany({
             data: spots.map((spot) => ({
               spotId: spot.id,
-              ticketKind: dto.ticketKind,
+              ticketKind: dto.ticket_kind,
               email: dto.email,
               status: TicketStatus.reserved,
             })),
@@ -113,7 +113,7 @@ export class EventsService {
               prisma.ticket.create({
                 data: {
                   spotId: spot.id,
-                  ticketKind: dto.ticketKind,
+                  ticketKind: dto.ticket_kind,
                   email: dto.email,
                 },
               }),

@@ -54,7 +54,7 @@ Content-Type: application/json
 X-Api-Token: 1234
 
 {
-  "spots": ["A1","A3"],
-  "ticketKind": "full",
+  "spots": ["{{ spotName }}"],
+  "ticket_kind": "full",
   "email": "test@test.com"
 }
