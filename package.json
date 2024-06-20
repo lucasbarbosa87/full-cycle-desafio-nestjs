@@ -9,7 +9,6 @@
     "build": "nest build",
     "format": "prettier --write \"apps/**/*.ts\" \"libs/**/*.ts\"",
     "start": "nest start",
-    "migrate:partner1": "dotenv -e .env.partner1 -- npx prisma migrate dev",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/apps/partner1/main",

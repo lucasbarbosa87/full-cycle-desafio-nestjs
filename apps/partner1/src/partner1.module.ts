@@ -5,11 +5,6 @@ import { PrismaModule } from '@app/core/prisma/prisma.module';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [
-    PrismaModule,
-    EventsModule,
-    SpotsModule,
-    ConfigModule.forRoot({ envFilePath: '.env.partner1', isGlobal: true }),
-  ],
+  imports: [PrismaModule, EventsModule, SpotsModule],
 })
 export class Partner1Module {}
